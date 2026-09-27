@@ -509,3 +509,84 @@ img, svg, video, iframe {
     font-size: 28px;
   }
 }
+
+/* ── Contract-lookup widget (#428) ──────────────────────────────────────── */
+.lookup-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 640px;
+}
+
+.lookup-row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.lookup-row--actions {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.lookup-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.lookup-hint {
+  font-weight: 400;
+  color: var(--text-dim);
+}
+
+.lookup-input {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  padding: 10px 13px;
+  font: inherit;
+  font-size: 13.5px;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
+.lookup-input:focus {
+  outline: 3px solid var(--accent-bg);
+  border-color: var(--accent);
+}
+
+.lookup-result {
+  margin-top: 18px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg-raised);
+  max-width: 640px;
+}
+
+.lookup-result--ok {
+  border-color: #2da44e;
+}
+
+.lookup-result--error {
+  border-color: #cf222e;
+}
+
+.lookup-result-pre {
+  margin: 0;
+  padding: 16px 18px;
+  font-size: 13px;
+  color: var(--code-text);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.lookup-note {
+  font-size: 12.5px;
+  color: var(--text-dim);
+  margin-top: 12px;
+  max-width: 640px;
+}
