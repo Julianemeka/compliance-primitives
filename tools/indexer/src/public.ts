@@ -8,6 +8,8 @@ export { decodeEvent } from "./decoder.js";
 
 export { Indexer } from "./indexer.js";
 
+export { runQuery } from "./query.js";
+
 export { SorobanRpc } from "./rpc.js";
 export type {
   GetEventsParams,
